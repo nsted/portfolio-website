@@ -12,6 +12,7 @@ function App() {
   const handleNavigation = (section) => {
     setCurrentSection(section);
     setIsMenuOpen(false); // Close menu after navigation
+    window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll to top on navigation
   };
 
   const toggleMenu = () => {
