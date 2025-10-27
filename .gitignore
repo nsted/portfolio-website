@@ -6,7 +6,10 @@ yarn-error.log*
 
 # Production build
 dist/
-build/
+/build/
+dist/build/
+# Allow src/assets/images/pet/build/ to be committed
+!src/assets/images/pet/build/
 
 # Environment variables
 .env
